@@ -1,0 +1,24 @@
+# Creative Tabs
+itemGroup.tuadventurecraft=TU Adventurecraft
+
+# ITEMS
+# Ingots
+item.tuadventurecraft.ingot_copper.name=Copper Ingot
+item.tuadventurecraft.ingot_neodymium.name=Neodymium Ingot
+item.tuadventurecraft.ingot_silver.name=Silver Ingot
+item.tuadventurecraft.ingot_tin.name=Tin Ingot
+# Bloom
+item.tuadventurecraft.bloom_copper.name=Copper Bloom
+item.tuadventurecraft.bloom_tin.name=Tin Bloom
+# Tools
+item.tuadventurecraft.knife_flint.name=Flint Knife
+item.tuadventurecraft.hatchet_flint.name=Flint Hatchet
+item.tuadventurecraft.hoshick_flint.name=Flint Hoshick
+# Produce
+item.tuadventurecraft.produce_blueberry.name=Blueberries
+
+# BLOCKS
+# Metals
+tile.tuadventurecraft.block_copper.name=Block of Copper
+# Crops
+tile.tuadventurecraft.crop_blueberry.name=Blueberry Bush

@@ -1,0 +1,16 @@
+[
+{
+  "modid": "tuadventurecraft",
+  "name": "TU Adventurecraft",
+  "description": "Example placeholder mod.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Intrepid249, MrUffle"],
+  "credits": "Intrepid249: Programming; MrUffle: Art design; Mucusinator, Sandor, Stev0esque, The_Pale_One: testing and inspiration",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

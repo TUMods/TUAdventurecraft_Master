@@ -1,0 +1,11 @@
+{
+  "variants":
+  {
+    "age=0": {"model": "crop_blueberry_stage_0"},
+    "age=1": {"model": "crop_blueberry_stage_1"},
+    "age=2": {"model": "crop_blueberry_stage_2"},
+    "age=3": {"model": "crop_blueberry_stage_3"},
+    "age=4": {"model": "crop_blueberry_stage_4"},
+    "age=5": {"model": "crop_blueberry_stage_5"}
+  }
+}
