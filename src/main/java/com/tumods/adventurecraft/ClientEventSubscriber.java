@@ -29,12 +29,14 @@ public class ClientEventSubscriber {
         registerModel(ModItems.HOSHICK_FLINT);
         // Produce
         registerModel(ModItems.PRODUCE_BLUEBERRY);
+        registerModel(ModItems.PRODUCE_RASPBERRY);
 
         // BLOCKS
         // Metals
         registerModel(Item.getItemFromBlock(ModBlocks.BLOCK_COPPER));
         // Crops
         registerModel(Item.getItemFromBlock(ModBlocks.CROP_BLUEBERRY));
+        registerModel(Item.getItemFromBlock(ModBlocks.CROP_RASPBERRY));
     }
 
     private static void registerModel(Item item) {

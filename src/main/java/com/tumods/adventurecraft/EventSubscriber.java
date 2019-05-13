@@ -1,19 +1,7 @@
 package com.tumods.adventurecraft;
 
 import com.tumods.adventurecraft.init.ModBlocks;
-import com.tumods.adventurecraft.init.ModMaterials;
-import com.tumods.adventurecraft.objects.blocks.food.CropBlueberry;
-import com.tumods.adventurecraft.objects.blocks.metals.BlockCopper;
-import com.tumods.adventurecraft.objects.items.bloom.BloomCopper;
-import com.tumods.adventurecraft.objects.items.bloom.BloomTin;
-import com.tumods.adventurecraft.objects.items.food.ProduceBlueberry;
-import com.tumods.adventurecraft.objects.items.ingots.IngotCopper;
-import com.tumods.adventurecraft.objects.items.ingots.IngotNeodymium;
-import com.tumods.adventurecraft.objects.items.ingots.IngotSilver;
-import com.tumods.adventurecraft.objects.items.ingots.IngotTin;
-import com.tumods.adventurecraft.objects.items.tools.ToolHatchet;
-import com.tumods.adventurecraft.objects.items.tools.ToolHoshick;
-import com.tumods.adventurecraft.objects.items.tools.ToolKnife;
+import com.tumods.adventurecraft.init.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
@@ -27,9 +15,11 @@ public class EventSubscriber {
     public static void registerBlocks(Register<Block> event) {
         final Block[] blocks = {
                 // Metals
-                new BlockCopper(),
+                ModBlocks.BLOCK_COPPER,
                 // Crops
-                new CropBlueberry()
+                ModBlocks.CROP_BLUEBERRY,
+                ModBlocks.CROP_RASPBERRY,
+                ModBlocks.CROP_RYE
         };
 
         event.getRegistry().registerAll(blocks);
@@ -39,26 +29,30 @@ public class EventSubscriber {
     public static void registerItems(Register<Item> event) {
         final Item[] items = {
                 // Ingots
-                new IngotCopper(),
-                new IngotNeodymium(),
-                new IngotSilver(),
-                new IngotTin(),
+                ModItems.INGOT_COPPER,
+                ModItems.INGOT_NEODYMIUM,
+                ModItems.INGOT_SILVER,
+                ModItems.INGOT_TIN,
                 // Bloom
-                new BloomCopper(),
-                new BloomTin(),
+                ModItems.BLOOM_COPPER,
+                ModItems.BLOOM_TIN,
                 // Tools
-                new ToolKnife("knife_flint", ModMaterials.TOOL_FLINT),
-                new ToolHatchet("hatchet_flint", ModMaterials.TOOL_FLINT, 4.0f, -3.1f),
-                new ToolHoshick("hoshick_flint", ModMaterials.TOOL_FLINT),
+                ModItems.KNIFE_FLINT,
+                ModItems.HATCHET_FLINT,
+                ModItems.HOSHICK_FLINT,
                 // Food
-                new ProduceBlueberry(1, 3, false)
+                ModItems.PRODUCE_BLUEBERRY,
+                ModItems.PRODUCE_RASPBERRY,
+                ModItems.PRODUCE_RYE
         };
 
         final Item[] itemBlocks = {
                 // Metals
                 new ItemBlock(ModBlocks.BLOCK_COPPER).setRegistryName(ModBlocks.BLOCK_COPPER.getRegistryName()),
                 // Crops
-                new ItemBlock(ModBlocks.CROP_BLUEBERRY).setRegistryName(ModBlocks.CROP_BLUEBERRY.getRegistryName())
+                new ItemBlock(ModBlocks.CROP_BLUEBERRY).setRegistryName(ModBlocks.CROP_BLUEBERRY.getRegistryName()),
+                new ItemBlock(ModBlocks.CROP_RASPBERRY).setRegistryName(ModBlocks.CROP_RASPBERRY.getRegistryName()),
+                new ItemBlock(ModBlocks.CROP_RYE).setRegistryName(ModBlocks.CROP_RYE.getRegistryName())
         };
 
         event.getRegistry().registerAll(items);

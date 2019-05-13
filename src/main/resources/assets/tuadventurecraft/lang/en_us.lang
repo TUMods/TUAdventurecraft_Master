@@ -16,9 +16,13 @@ item.tuadventurecraft.hatchet_flint.name=Flint Hatchet
 item.tuadventurecraft.hoshick_flint.name=Flint Hoshick
 # Produce
 item.tuadventurecraft.produce_blueberry.name=Blueberries
+item.tuadventurecraft.produce_raspberry.name=Raspberries
+item.tuadventurecraft.produce_rye.name=Rye Grain
 
 # BLOCKS
 # Metals
 tile.tuadventurecraft.block_copper.name=Block of Copper
 # Crops
 tile.tuadventurecraft.crop_blueberry.name=Blueberry Bush
+tile.tuadventurecraft.crop_raspberry.name=Raspberry Bush
+tile.tuadventurecraft.crop_rye.name=Rye Stalks
